@@ -4,21 +4,21 @@ import Image from 'next/image';
 
 
 
-export default function PixArea({ totalPrice, cashbackPercent }) {
+export default function InstallmentArea({ totalPrice, cashbackPercent }) {
 
   return (
     
 
 <main className="">
+
+    
+   
 <Button
-     className=" pl-1 pr-1 flex flex-col relative border-2 border-gray-200 rounded-lg w-full hover:border-green-400 hover:border-2 "
+     className=" pl-1 pr-1 flex flex-col relative border-2 border-gray-200 rounded-lg w-full hover:border-green-400 hover:border-2"
      variant="outlined"
      color="success"
-    
+     
      >
-      <label className="z-10 absolute font-bold bg-gray-200 rounded-full px-5 normal-case text-black -top-3 left-4">
-        Pix
-      </label>
       
         <div id="price-icon" className="flex flex-row w-11/12 justify-between ">
           <div id="price-area flex flex-col justify-between ">
@@ -50,9 +50,6 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
         </div>
 
     </Button>
-
-
-
 
 </main>
 
