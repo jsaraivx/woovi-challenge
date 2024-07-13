@@ -18,17 +18,7 @@ export default function InstallmentsGroup({ totalPrice, cashbackPercent }) {
             labelPlacement="start"
             control={<InstallmentsArea totalPrice="10.000,90" cashbackPercent={"5"} />}
           />
-          <FormControlLabel
-            value="6"
-            labelPlacement="start"
-            control={<InstallmentsArea totalPrice="10.000,90" cashbackPercent={"5"} />}
-          />
-          <FormControlLabel
-            value="3"
-            labelPlacement="start"
-            control={<InstallmentsArea totalPrice="10.000,90" cashbackPercent={"5"} />}
-          />
-
+         
       </FormControl>
     </main>
   );

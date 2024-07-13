@@ -32,11 +32,6 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
             </form>
           </div>
 
-          {/*<Radio className="text-right" />  
-            This is a Radio, but i don´t like of the idea for have a Radio button
-            in the Pix Method.
-          */}
-
         </div>
         <div className='relative mb-4' >
             <Image

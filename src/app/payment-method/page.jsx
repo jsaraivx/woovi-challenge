@@ -5,11 +5,12 @@ import Container from '@mui/material/Container';
 import PixArea from './../../components/PixArea';
 import InstallmentsGroup from './../../components/InstallmentsGroup'
 import Box from './../../../node_modules/@mui/material/Box/Box';
+import Installments from './../../components/Installments'
 
 export default function Home() {
   return (
-    <main className='bg-slate-200' >
-    <Container className=" jusfify-center rounded-lg drop-shadow-sm bg-slate-50 flex flex-col my-auto h-screen w-screen max-w-lg max-w-11/12 " >    
+    <main className='bg-slate-100' >
+    <Container className=" jusfify-center rounded-lg drop-shadow-sm bg-slate-50 flex flex-col my-auto w-screen max-w-lg h-screen" >    
         <LogoWoovi // Logo area with Size in px
          size="100" 
          />
@@ -21,17 +22,17 @@ export default function Home() {
         totalPrice='30.500,00'
         cashbackPercent='3'
         />
-        <Box className="m-4">
+            <Box className="m-4">
             </Box>
-
-        <InstallmentsGroup
-        totalPrice='10.000,00'
-        cashbackPercent='4'
+        <Installments
+         totalPrice='10.000,00'
+         cashbackPercent='4'
         />
-
-
+     
+    
 
     </Container>  
-    </main>
+
+</main>
   );
 }
