@@ -16,9 +16,9 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
      color="success"
     
      >
-      <label className="z-10 absolute font-bold bg-gray-200 rounded-full px-5 normal-case text-black -top-3 left-4">
-        Pix
-      </label>
+      <span className="bg-gray-200 normal-case text-black px-4 font-bold rounded-xl absolute -top-3 left-4 text-base z-10">
+          Pix
+        </span>
       
         <div id="price-icon" className="flex flex-row w-11/12 justify-between ">
           <div id="price-area flex flex-col justify-between ">
@@ -33,17 +33,18 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
           </div>
 
         </div>
-        <div className='relative mb-4' >
-            <Image
-            width='330'
-            height='330'
-            src="../images/rectangle-badge.svg"
-            alt='Desconto dado.'
-
-            />
-            <p className='text-white absolute top-1 left-3 normal-case text-sm ' >🤑 <b>R$ 300,00</b> de volta no seu Pix na hora</p>
-        </div>
-
+        <div className="relative -ml-3 ">
+                <Image
+                width="330"
+                height="330"
+                src="../images/rectangle-badge.svg"
+                alt="Desconto dado."
+                className=" ml-3 "
+                />
+                <p className="text-white absolute top-2 left-5 normal-case text-xs ">
+                🤑 <b>R$ 300,00</b> de volta no seu Pix na hora
+                </p>
+            </div>
     </Button>
 
 
