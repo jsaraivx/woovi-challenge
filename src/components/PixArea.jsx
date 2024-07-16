@@ -11,7 +11,7 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
 
 <main className="">
 <Button
-     className=" pl-1 pr-1 flex flex-col relative border-2 border-gray-200 rounded-lg w-full hover:border-green-400 hover:border-2 "
+     className=" pl-1 pr-1 flex flex-col relative border-2 border-gray-200 rounded-lg w-full hover:border-green-400 hover:border-2 pb-8 "
      variant="outlined"
      color="success"
     
@@ -33,7 +33,7 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
           </div>
 
         </div>
-        <div className="relative -ml-3 ">
+        <div className="absolute left-0 top-16">
                 <Image
                 width="330"
                 height="330"
