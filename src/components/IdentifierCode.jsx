@@ -1,4 +1,3 @@
-
 export default function IndetifierCode(){
     return(
         <section className='flex flex-col items-center self-center'>
@@ -7,3 +6,4 @@ export default function IndetifierCode(){
         </section>
     )
 }
+// the string will be changed to $Payment_ID

@@ -3,6 +3,7 @@ import TitlePage from "../../../../components/TitlePage";
 import SecurePayment from "../../../../components/SecurePayment";
 import PaymentDate from "../../../../components/PaymentDate";
 import IdentifierCode from "../../../../components/IdentifierCode";
+import ReturnToHome from '../../../../components/ReturnToHome';
 import { TextField, InputLabel, Box, Container, Select, Button, MenuItem } from "@mui/material";
 
 export default function Home() {
@@ -12,13 +13,11 @@ export default function Home() {
         <LogoWoovi // Logo area with Size in px
           size="100"
         />
-
         <TitlePage // Main Title of page. with Message and User name.
           messageContent={"pague o restante em 1x no cartão"}
           nameUser={"João"}
           className="flex self-center items-center text-center"
         />
-
         <form className="w-full flex flex-col justify-center  ">
           <TextField
             id="user_name"
@@ -57,7 +56,6 @@ export default function Home() {
               className=" self-center my-4 rounded-xl"
             />
           </section>
-
           <div className="w-11/12 flex self-center flex-col">
             <InputLabel id="number-of-installments">Parcelas</InputLabel>
             <Select
@@ -69,7 +67,6 @@ export default function Home() {
               <MenuItem value={1}>1x de R$ 15.300,00</MenuItem>
             </Select>
           </div>
-
           <section
             name="pay"
             className="flex self-center w-full justify-center items-center"
@@ -83,13 +80,11 @@ export default function Home() {
           </section>
           <PaymentDate />
         </form>
-
         <Box className="m-4"></Box>
         <IdentifierCode />
         <Box className="m-4"></Box>
-
         <SecurePayment />
-
+        <ReturnToHome/>
         <Box className="m-4"></Box>
       </Container>
     </main>

@@ -1,5 +1,6 @@
 
 import LogoWoovi from "@/components/LogoWoovi";
+import ReturnToHome from '@/components/ReturnToHome';
 import TitlePage from "../../components/TitlePage";
 import Container from '@mui/material/Container';
 import PixArea from './../../components/PixArea';
@@ -9,8 +10,8 @@ import SecurePayment from './../../components/SecurePayment';
 
 export default function Home() {
   return (
-    <main className='bg-gradient-to-br from-purple-500 to-blue-800 min-h-screen' >
-    <Container className=" jusfify-center rounded-lg drop-shadow-sm bg-white flex flex-col my-auto w-screen max-w-lg " >    
+    <main className='bg-gradient-to-br from-purple-500 select-none to-blue-800 min-h-screen' >
+    <Container className=" my-auto w-screen max-w-lg jusfify-center rounded-lg drop-shadow-sm bg-white flex flex-col " >    
         <LogoWoovi // Logo area with Size in px
          size="100" 
          />
@@ -24,17 +25,14 @@ export default function Home() {
         />
             <Box className="m-4">
             </Box>
-
         <Installments
          totalPrice='10.000,00'
          cashbackPercent='4'
         />
-
         <SecurePayment/>
-    
+        <ReturnToHome/>
         <Box className="m-4">
-            </Box>
-
+            </Box> 
     </Container>  
 
 </main>
