@@ -7,6 +7,7 @@ import PixArea from './../../components/PixArea';
 import Box from './../../../node_modules/@mui/material/Box/Box';
 import Installments from './../../components/Installments'
 import SecurePayment from './../../components/SecurePayment';
+import Button from '@mui/material/Button';
 
 export default function Home() {
   return (
@@ -29,6 +30,13 @@ export default function Home() {
          totalPrice='10.000,00'
          cashbackPercent='4'
         />
+        <Button
+              href='payment-method/pix+credit-card/pix'
+              className="normal-case flex rounded-xl bg-blue-950 text-lg w-full mt-4 font-medium py-2 px-4"
+              variant="contained"
+            >
+              Pagar
+            </Button>
         <SecurePayment/>
         <ReturnToHome/>
         <Box className="m-4">
