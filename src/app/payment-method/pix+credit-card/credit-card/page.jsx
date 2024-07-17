@@ -29,6 +29,7 @@ export default function Home() {
           <TextField
             id="user_cpf"
             required
+            type='number'
             label="CPF"
             variant="outlined"
             className="w-11/12 self-center my-4 rounded-xl"
@@ -36,6 +37,7 @@ export default function Home() {
           <TextField
             id="card_number"
             required
+            type='number'
             label="Número do cartão"
             variant="outlined"
             className="w-11/12 self-center my-4 rounded-xl"
@@ -46,10 +48,12 @@ export default function Home() {
               required
               label="Vencimento"
               variant="outlined"
+              type='month'
               className=" self-center my-4 rounded-xl"
             />
             <TextField
               id="card_cvv"
+              type='number'
               label="CVV"
               required
               variant="outlined"

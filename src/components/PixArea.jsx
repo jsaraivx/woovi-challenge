@@ -27,7 +27,7 @@ export default function PixArea({ totalPrice, cashbackPercent }) {
                 <b>1x </b>R$ {totalPrice}
               </h1>
               <p className="normal-case mb-1 text-green-400 ">
-                Ganhe <b>{cashbackPercent}</b> de Cashback
+                Ganhe <b>{cashbackPercent}%</b> de Cashback
               </p>
             </form>
           </div>
