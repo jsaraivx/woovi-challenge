@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 export default function Home() {
   return (
     <main className='bg-gradient-to-br from-purple-500 select-none to-blue-800 min-h-screen' >
-    <Container className=" my-auto w-screen max-w-lg jusfify-center rounded-lg drop-shadow-sm bg-white flex flex-col " >    
+    <Container className=" my-auto w-screen max-w-lg justify-center rounded-lg drop-shadow-sm bg-white flex flex-col " >    
         <LogoWoovi // Logo area with Size in px
          size="100" 
          />

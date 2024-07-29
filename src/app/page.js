@@ -7,6 +7,7 @@ import { AvatarGroup, Avatar, Badge } from "@mui/material";
 import Image from "next/image";
 import LogoWooviGray from "@/components/LogoWooviGray";
 
+
 export default function Home() {
   return (
     <main className="select-none bg-gradient-to-br from-purple-500 to-blue-800 min-h-screen flex flex-col">
